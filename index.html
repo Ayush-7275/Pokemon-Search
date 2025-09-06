@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pokemon Search</title>
+		<!-- font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- css -->
+		<link href="./output.css" rel="stylesheet" />
+	</head>
+	<body>
+		<main
+			class="bg-no-repeat bg-center bg-cover bg-[url(https://mir-s3-cdn-cf.behance.net/project_modules/hd/a0385c129062377.61637ca01b347.jpg)] min-h-screen w-full flex items-center justify-center"
+		>
+			<div
+				class="container bg-[#AFD76A] p-8 rounded-lg shadow-lg w-full max-w-2xl space-y-6"
+			>
+				<h1 class="text-3xl text-center font-extrabold font-['roboto']">
+					Hello, Welcome to Pokemon Search
+				</h1>
+				<div
+					class="input flex justify-center items-center flex-col gap-2"
+				>
+					<input
+						type="text"
+						name=""
+						id="poke_search"
+						placeholder="Search here"
+						class="bg-[#478D68] rounded-md text-[white] placeholder-white p-1 shadow-xl w-full max-w-sm font-[poppins]"
+					/>
+					<button
+						id="search_button"
+						class="bg-[#478D68] p-1 font-[poppins] rounded-md text-white shadow-xl mt-1 w-auto"
+					>
+						Search
+					</button>
+				</div>
+				<div id="result" class="result flex hidden">
+					<div
+						class="image flex items-center justify-center basis-4/12 h-64 overflow-hidden"
+					>
+						<img
+							id="poke_img"
+							src=""
+							alt="Pokemon image"
+							class="object-contain"
+						/>
+					</div>
+					<div class="font-['poppins'] info basis-8/12">
+						<h2 id="poke_name" class="text-center text-2xl font-bold">
+							POKEMON NAME
+						</h2>
+						<p class="text-md font-bold " id="poke_type">Type:</p>
+						<p class="text-md font-bold " id="poke_height">Height:</p>
+						<p class="text-md font-bold " id="poke_weight">Weight:</p>
+						<p class="text-md font-bold " id="poke_abilities">Abilities:</p>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<script src="script.js"></script>
+	</body>
+</html>
